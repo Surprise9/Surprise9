@@ -16,14 +16,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        textView = (TextView) findViewById(R.id.tvOut);
-        buttonOk = (Button) findViewById(R.id.btnOk);
-        buttonCancel = (Button) findViewById(R.id.btnCancel);
+        textView =findViewById(R.id.tvOut);
+        buttonOk =findViewById(R.id.btnOk);
+        buttonCancel =findViewById(R.id.btnCancel);
 
         View.OnClickListener oclBtnOK = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                textView.setText("Нажата кнопка Visible");
+                textView.setText("Привет");
+                textView.setVisibility(View.VISIBLE);
             }
         };
         View.OnClickListener oclBtnCancel = new View.OnClickListener() {
